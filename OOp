@@ -1,0 +1,21 @@
+class Employee:
+  def __init__(self,name, salary):
+    self.name = name
+    self.__salary = salary
+  
+  def show(self):
+     print("Name", self.name, 'salary:', self.__salary)
+
+emp = Employee('Jessa', 10000)
+
+print("Name:", emp.name, 'salary:', emp.__salary)
+
+emp.show()
+
+
+class Sensor:
+  def __init__(self,name,location,record_date):
+    self.name = name
+    self.location = location
+    self.record_date = record_date
+    self.data = {}
